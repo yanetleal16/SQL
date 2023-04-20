@@ -1,0 +1,26 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, cost INTEGER, sale integer);
+
+INSERT INTO store VALUES (1, "shoes", 50, 10, 25);
+INSERT INTO store VALUES (2, "shirts", 50, 8, 17);
+INSERT INTO store VALUES (3, "pants", 50, 15, 35);
+INSERT INTO store VALUES (4, "belts", 50, 5, 12);
+INSERT INTO store VALUES (5, "bags", 50, 30, 60);
+INSERT INTO store VALUES (6, "makeup", 50, 6, 13);
+INSERT INTO store VALUES (7, "headbands", 50, 3, 8);
+INSERT INTO store VALUES (8, "watches", 50, 18, 35);
+INSERT INTO store VALUES (9, "rings", 50, 4, 10);
+INSERT INTO store VALUES (10, "bracelets", 50, 5, 12);
+INSERT INTO store VALUES (11, "necklaces", 50, 7, 15);
+INSERT INTO store VALUES (12, "shoelaces", 50, 2, 8);
+INSERT INTO store VALUES (13, "lipbalm", 50, 4, 10);
+INSERT INTO store VALUES (14, "eyeshadow", 50, 2, 15);
+INSERT INTO store VALUES (15, "perfume", 50, 5, 18);
+SELECT * FROM store;
+
+SELECT * FROM store ORDER BY sale DESC;
+
+SELECT max(sale) FROM store;
+
+
+
+
