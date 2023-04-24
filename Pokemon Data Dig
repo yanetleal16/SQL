@@ -1,3 +1,4 @@
+
 CREATE TABLE pokemon(
   Number     INTEGER,
   Name       TEXT PRIMARY KEY,
@@ -271,8 +272,12 @@ ELSE "below target"
 END AS "speed_target"
 FROM pokemon;
 
-SELECT * FROM pokemon WHERE attack > 200 AND speed > 60;
 
 SELECT * FROM pokemon WHERE Type_1 IN ("Water", "Electric", "Poison", "Ghost");
 
 SELECT * FROM pokemon WHERE Type_1 IN (Select Type_1 from pokemon);
+
+
+SELECT * FROM pokemon WHERE HP > 100 AND Defense > 40;
+
+SELECT * FROM pokemon WHERE Attack > 80 OR Type_1 IN ("Ice", "Water", "Ghost");
